@@ -1,0 +1,418 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-07-18T12:27:43.093Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6893288200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.StepDefinitions.HooksClass.Launchbrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login with valid credentials for provider portal",
+        "description": "",
+        "id": "login;login-with-valid-credentials-for-provider-portal;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 866654500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is navigate to the VYE login page",
+            "match": {
+              "location": "com.StepDefinitions.TC_01_loginSteps.user_is_navigate_to_the_VYE_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21486651900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters user name from sheet Login and row 0 password and click on continue button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 33
+                },
+                {
+                  "val": "0",
+                  "offset": 47
+                }
+              ],
+              "location": "com.StepDefinitions.TC_01_loginSteps.user_enters_user_name_Login_password_0and_click_on_continue_button(java.lang.String,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7254519800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Provider Enrollemet Application continue or delete by using buttons delete",
+            "match": {
+              "arguments": [
+                {
+                  "val": "delete",
+                  "offset": 68
+                }
+              ],
+              "location": "com.StepDefinitions.TC_01_loginSteps.provider_enrollemet_application_continue_or_delete_by_using_buttons_Continue(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1008200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate user is redirected to Dasboard \"Provider Enrollment Supervisor (IU-Super Admin)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Provider Enrollment Supervisor (IU-Super Admin)\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.StepDefinitions.TC_01_loginSteps.validate_user_is_redirected_to_Dasboard(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC_01_login.feature",
+    "tags": [
+      {
+        "name": "@LoginTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-07-18T12:28:19.739Z",
+        "line": 24,
+        "name": "Fill all the vaild data for entity enrollement",
+        "description": "",
+        "id": "entity-enrollement;fill-all-the-vaild-data-for-entity-enrollement;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7392387500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in Identifying Information Section",
+            "match": {
+              "location": "com.StepDefinitions.TC_02_EntityInformationSteps.user_is_in_Identifying_Information_Section()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d126.0.6478.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027INSPIRONLABS\u0027, ip: \u002710.106.0.109\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\\Users\\RakeshA\\AppData\\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60704}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 3cb0ab36ef434662388c699207d1edfd\n*** Element info: {Using\u003dxpath, value\u003d//input[@placeholder\u003d\u0027MM/DD/YYYY\u0027]}\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)\r\n\tat Utilities.BaseUtilClass.sendkeys(BaseUtilClass.java:278)\r\n\tat com.StepDefinitions.TC_02_EntityInformationSteps.user_Goes_to_Provider_Identifier_Section_from_Sheet_Invaild_data_for_individual_and_row_and_Option_yes(TC_02_EntityInformationSteps.java:63)\r\n\tat ✽.User Goes to Provider Identifier information Section from Sheet Invaild data for individual and row 0 and Option yes(file:///C:/Users/RakeshA/eclipse-workspace/VYE_SD_QA_01/src/test/resources/Features/TC_02_EntityStep.feature:6)\r\n",
+              "duration": 22320910200,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User Goes to Provider Identifier information Section from Sheet Invaild data for individual and row 0 and Option yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invaild data for individual",
+                  "offset": 64
+                },
+                {
+                  "val": "0",
+                  "offset": 100
+                },
+                {
+                  "val": "yes",
+                  "offset": 113
+                }
+              ],
+              "location": "com.StepDefinitions.TC_02_EntityInformationSteps.user_Goes_to_Provider_Identifier_Section_from_Sheet_Invaild_data_for_individual_and_row_and_Option_yes(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Fills all the Details of Provider Identifiers from Sheet Invaild data for individual and row 0 and Options yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invaild data for individual",
+                  "offset": 57
+                },
+                {
+                  "val": "0",
+                  "offset": 93
+                },
+                {
+                  "val": "yes",
+                  "offset": 107
+                }
+              ],
+              "location": "com.StepDefinitions.TC_03_EntityProviderIdentificationSteps.fills_all_the_Details_of_Provider_Identifiers_from_Sheet_Invaild_data_for_individual_and_row_and_Options_yes(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 992100,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User goes to Ownership section and Select as yes for All the Answers from Sheet Invaild data for individual and row 0 table 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "yes",
+                  "offset": 45
+                },
+                {
+                  "val": "Invaild data for individual",
+                  "offset": 80
+                },
+                {
+                  "val": "0",
+                  "offset": 116
+                },
+                {
+                  "val": "1",
+                  "offset": 124
+                }
+              ],
+              "location": "com.StepDefinitions.TC_04_EntityOwnershipSteps.user_goes_to_Ownership_section_and_Select_as_yes_for_All_the_Answers_from_Sheet_Invaild_data_for_individual_and_row_table(java.lang.String,java.lang.String,int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User goes to Key Personel and Add Multiple Key Personel from Sheet Invaild data for individual and row 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invaild data for individual",
+                  "offset": 67
+                },
+                {
+                  "val": "0",
+                  "offset": 103
+                }
+              ],
+              "location": "com.StepDefinitions.TC_05_EntityKeypseronalSteps.user_goes_to_Key_Personel_and_Add_Multiple_Key_Personel_from_Sheet_Invaild_data_for_individual_and_row(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User Goes to Exclusion Sanction Information Section and Select yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "yes",
+                  "offset": 63
+                }
+              ],
+              "location": "com.StepDefinitions.TC_06_EntityExclusionSanctionStep.user_Goes_to_Exclusion_Sanction_Information_Section_and_Select_as_option(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User Fills the EFT Information from Sheet Invaild data for individual and row 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invaild data for individual",
+                  "offset": 42
+                },
+                {
+                  "val": "0",
+                  "offset": 78
+                }
+              ],
+              "location": "com.StepDefinitions.TC_07_EntityEFTInformationSteps.user_Fills_the_EFT_Information_from_Sheet_Invaild_data_for_individual_and(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User goes to Address Details and fills all the details from Sheet Invaild data for individual and row 0 and Options as yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invaild data for individual",
+                  "offset": 66
+                },
+                {
+                  "val": "0",
+                  "offset": 102
+                },
+                {
+                  "val": "yes",
+                  "offset": 119
+                }
+              ],
+              "location": "com.StepDefinitions.TC_08_EntityAddressSteps.user_goes_to_Address_Details_and_fills_all_the_details_from_Sheet_Invaild_data_for_individual_and(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User Goes to Program Participation Section from Sheet Invaild data for individual and row 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invaild data for individual",
+                  "offset": 54
+                },
+                {
+                  "val": "0",
+                  "offset": 90
+                }
+              ],
+              "location": "com.StepDefinitions.TC_09_EntityProgramParticipationStep.user_Goes_to_Program_Participation_Section_from_Sheet_Invaild_data_for_individual_and_row(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User Goes to Service Location Section and Adds a Service Location from Sheet Invaild data for individual and row 0 and Options as yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invaild data for individual",
+                  "offset": 77
+                },
+                {
+                  "val": "0",
+                  "offset": 113
+                },
+                {
+                  "val": "yes",
+                  "offset": 130
+                }
+              ],
+              "location": "com.StepDefinitions.TC_10_EntityServicelocationSteps.user_Goes_to_Service_Location_Section_and_Adds_a_Service_Location_from_Sheet_Invaild_data_for_individual_and(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "if the heath home serivce is visible then fill the data",
+            "match": {
+              "location": "com.StepDefinitions.TC_15_EntityHealthhomeserviceSteps.if_the_heath_home_serivce_is_visible_then_fill_the_data()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1013900,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Goes to Upload Docuements and Uploads Spesific Files",
+            "match": {
+              "location": "com.StepDefinitions.TC_11_EntityuploaddocumentSteps.goes_to_Upload_Docuements_and_Uploads_Spesific_Files()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User Fills the Summary Details and Submit from Sheet Invaild data for individual and row 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invaild data for individual",
+                  "offset": 53
+                },
+                {
+                  "val": "0",
+                  "offset": 89
+                }
+              ],
+              "location": "com.StepDefinitions.TC_13_EntitySummarySteps.user_Fills_the_Summary_Details_and_Submit_from_Sheet_Invaild_data_for_individual_and(java.lang.String,int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@License"
+          }
+        ]
+      }
+    ],
+    "name": "Entity Enrollement",
+    "description": "",
+    "id": "entity-enrollement",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC_02_EntityStep.feature",
+    "tags": []
+  }
+]
