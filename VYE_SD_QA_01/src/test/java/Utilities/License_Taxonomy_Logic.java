@@ -1,7 +1,7 @@
 package Utilities;
 
 
-
+import com.PageObjectManager.Entity.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
@@ -9,11 +9,11 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 
 
-import com.PageObjectManager.PageObjectManager;
+
 
 public class License_Taxonomy_Logic extends BaseUtilClass{
 	
-	 PageObjectManager poj;
+	PageObjectManager poj;
 	public License_Taxonomy_Logic(String dyp_taxonomy,String ProgramParticipation,String issue_date,String expiry_date,String license_number) throws InterruptedException{
 		
 		poj= new PageObjectManager();

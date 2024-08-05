@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\RakeshA\AppData\Local\Temp\testng-eclipse--1840501344\testng-customsuite.xml</span>
+                    <span>C:\Users\RakeshA\AppData\Local\Temp\testng-eclipse-1881699356\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.TestRunner.testrun" class="method navigator-link" hash-for-method="runScenario(&quot;Fill all the vaild data for entity enrollement&quot;, &quot;Entity Enrollement&quot;)">runScenario("Fill all the vaild data for entity enrollement", "Entity Enrollement")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.TestRunner.testrun" class="method navigator-link" hash-for-method="runScenario(&quot;Fill in the data with valid credentials for a Trading Partner&quot;, &quot;Trading Partner&quot;)">runScenario("Fill in the data with valid credentials for a Trading Partner", "Trading Partner")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -141,20 +141,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Fill all the vaild data for entity enrollement&quot;, &quot;Entity Enrollement&quot;)">
-                  </a> <!-- runScenario("Fill all the vaild data for entity enrollement", "Entity Enrollement") -->
+                  <a name="runScenario(&quot;Fill in the data with valid credentials for a Trading Partner&quot;, &quot;Trading Partner&quot;)">
+                  </a> <!-- runScenario("Fill in the data with valid credentials for a Trading Partner", "Trading Partner") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Fill all the vaild data for entity enrollement", "Entity Enrollement")</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=126.0.6478.127)
+                  <span class="parameters">("Fill in the data with valid credentials for a Trading Partner", "Trading Partner")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[.=&apos;+ Add Line&apos;])[1]&quot;}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;INSPIRONLABS&apos;, ip: &apos;10.106.0.109&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\RakeshA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60704}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3cb0ab36ef434662388c699207d1edfd
-*** Element info: {Using=xpath, value=//input[@placeholder=&apos;MM/DD/YYYY&apos;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\RakeshA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd24e8c2301c7e6437da4c26b01021f3
+*** Element info: {Using=xpath, value=(//span[.=&apos;+ Add Line&apos;])[1]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor42.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -170,10 +170,20 @@ Session ID: 3cb0ab36ef434662388c699207d1edfd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
-	at Utilities.BaseUtilClass.sendkeys(BaseUtilClass.java:278)
-	at com.StepDefinitions.TC_02_EntityInformationSteps.user_Goes_to_Provider_Identifier_Section_from_Sheet_Invaild_data_for_individual_and_row_and_Option_yes(TC_02_EntityInformationSteps.java:63)
-	at ✽.User Goes to Provider Identifier information Section from Sheet Invaild data for individual and row 0 and Option yes(file:///C:/Users/RakeshA/eclipse-workspace/VYE_SD_QA_01/src/test/resources/Features/TC_02_EntityStep.feature:6)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at Utilities.BaseUtilClass.scrollToViewelement(BaseUtilClass.java:707)
+	at com.Pages.TP.TP_04_Ownership_Page.fill_the_ownership_question1(TP_04_Ownership_Page.java:150)
+	at com.StepDefinitions.LICENSE.Trading_Partner.TP_04_Ownership_Steps.fill_the_all_the_data_for_Ownership_scetion_by_using_from_Sheet_Trading_Partner_and_row_and_option_Option(TP_04_Ownership_Steps.java:28)
+	at ✽.Fill the all the data for Ownership scetion by using from Sheet Trading_Partner and row 0 and option yes(file:///C:/Users/RakeshA/git/repository/VYE_SD_QA_01/src/test/resources/Features/TC_03_Trading_Partner.feature:11)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -203,7 +213,7 @@ Session ID: 3cb0ab36ef434662388c699207d1edfd
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\RakeshA\AppData\Local\Temp\testng-eclipse--1840501344\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\RakeshA\AppData\Local\Temp\testng-eclipse-1881699356\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -264,16 +274,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.TestRunner.testrun')
-data.setCell(0, 3, 36893);
+data.setCell(0, 3, 111895);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.TestRunner.testrun')
-data.setCell(1, 3, 29743);
+data.setCell(1, 3, 39686);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -306,17 +316,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid credentials for provider portal", "login")</span>
-                <span class="method-start">386 ms</span>
+                <span class="method-start">496 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Fill all the vaild data for entity enrollement", "Entity Enrollement")</span>
-                <span class="method-start">37285 ms</span>
+                <span class="method-name">runScenario("Fill in the data with valid credentials for a Trading Partner", "Trading Partner")</span>
+                <span class="method-start">40187 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">67035 ms</span>
+                <span class="method-start">152085 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

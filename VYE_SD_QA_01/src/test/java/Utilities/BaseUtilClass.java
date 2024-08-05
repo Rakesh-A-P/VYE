@@ -70,6 +70,7 @@ public class BaseUtilClass {
 			if(button.equalsIgnoreCase("Continue")) {
 				
 				actionClick(Continue);
+				Thread.sleep(2000);
 				System.out.println("Provider Enrollement is Continue="+Question);
 			}		
 			
@@ -157,7 +158,7 @@ public class BaseUtilClass {
 public static WebDriver getDriverchrome() {
 		
 		try {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\RakeshA\\eclipse-workspace\\VYE_SD_QA_01\\chromedriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\RakeshA\\git\\repository\\VYE_SD_QA_01\\Drivers\\chromedriver.exe");
 			
 		   
 		    ChromeOptions options=new ChromeOptions();
@@ -182,7 +183,7 @@ public static WebDriver getDriverchrome() {
  
 		switch (browserType) {
 		case CHROME:
-			System.setProperty("webdriver.chrome.driver", defaultPath+"C:\\Users\\RakeshA\\eclipse-workspace\\VYE_SD_QA_01\\chromedriver\\chromedriver.exe");
+//			System.setProperty("webdriver.chrome.driver", defaultPath+"C:\\Users\\RakeshA\\eclipse-workspace\\VYE_SD_QA_01\\chromedriver\\chromedriver.exe");
 			 ChromeOptions options=new ChromeOptions();
 			    options.setAcceptInsecureCerts(true);
 			WebDriverManager.chromedriver().setup();
@@ -593,7 +594,7 @@ public static WebDriver getDriverchrome() {
     }
 	public static String readdata(String sheetName, int rowNum, int cellNum) throws IOException {
 		String res = null;
-		File file = new File("C:\\Users\\RakeshA\\eclipse-workspace\\VYE_SD_QA_01\\src\\test\\java\\ExcelData\\Book3.xlsx");
+		File file = new File("C:\\Users\\RakeshA\\git\\repository\\VYE_SD_QA_01\\src\\test\\java\\ExcelData\\Book3.xlsx");
 		FileInputStream stream = new FileInputStream(file);
 		Workbook book = new XSSFWorkbook(stream);
 		Sheet sheet = book.getSheet(sheetName);

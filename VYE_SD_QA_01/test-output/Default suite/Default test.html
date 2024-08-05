@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 18 17:57:42 IST 2024</td>
+<td>Started on:</td><td>Mon Jul 29 12:04:39 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67195 ms)</td>
+<tr><td>Total time:</td><td>152 seconds (152154 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TestRunner.testrun.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.testrun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fill all the vaild data for entity enrollement", "Entity Enrollement"</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=126.0.6478.127)
+<td title='com.TestRunner.testrun.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.testrun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fill in the data with valid credentials for a Trading Partner", "Trading Partner"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[.=&apos;+ Add Line&apos;])[1]&quot;}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;INSPIRONLABS&apos;, ip: &apos;10.106.0.109&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\RakeshA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60704}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3cb0ab36ef434662388c699207d1edfd
-*** Element info: {Using=xpath, value=//input[@placeholder=&apos;MM/DD/YYYY&apos;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\RakeshA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd24e8c2301c7e6437da4c26b01021f3
+*** Element info: {Using=xpath, value=(//span[.=&apos;+ Add Line&apos;])[1]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor42.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -101,21 +101,31 @@ Session ID: 3cb0ab36ef434662388c699207d1edfd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
-	at Utilities.BaseUtilClass.sendkeys(BaseUtilClass.java:278)
-	at com.StepDefinitions.TC_02_EntityInformationSteps.user_Goes_to_Provider_Identifier_Section_from_Sheet_Invaild_data_for_individual_and_row_and_Option_yes(TC_02_EntityInformationSteps.java:63)
-	at ✽.User Goes to Provider Identifier information Section from Sheet Invaild data for individual and row 0 and Option yes(file:///C:/Users/RakeshA/eclipse-workspace/VYE_SD_QA_01/src/test/resources/Features/TC_02_EntityStep.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace115816820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace115816820'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=126.0.6478.127)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at Utilities.BaseUtilClass.scrollToViewelement(BaseUtilClass.java:707)
+	at com.Pages.TP.TP_04_Ownership_Page.fill_the_ownership_question1(TP_04_Ownership_Page.java:150)
+	at com.StepDefinitions.LICENSE.Trading_Partner.TP_04_Ownership_Steps.fill_the_all_the_data_for_Ownership_scetion_by_using_from_Sheet_Trading_Partner_and_row_and_option_Option(TP_04_Ownership_Steps.java:28)
+	at ✽.Fill the all the data for Ownership scetion by using from Sheet Trading_Partner and row 0 and option yes(file:///C:/Users/RakeshA/git/repository/VYE_SD_QA_01/src/test/resources/Features/TC_03_Trading_Partner.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace81445899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace81445899'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[.=&apos;+ Add Line&apos;])[1]&quot;}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;INSPIRONLABS&apos;, ip: &apos;10.106.0.109&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\RakeshA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60704}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3cb0ab36ef434662388c699207d1edfd
-*** Element info: {Using=xpath, value=//input[@placeholder=&apos;MM/DD/YYYY&apos;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\RakeshA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd24e8c2301c7e6437da4c26b01021f3
+*** Element info: {Using=xpath, value=(//span[.=&apos;+ Add Line&apos;])[1]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor42.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -131,12 +141,22 @@ Session ID: 3cb0ab36ef434662388c699207d1edfd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
-	at Utilities.BaseUtilClass.sendkeys(BaseUtilClass.java:278)
-	at com.StepDefinitions.TC_02_EntityInformationSteps.user_Goes_to_Provider_Identifier_Section_from_Sheet_Invaild_data_for_individual_and_row_and_Option_yes(TC_02_EntityInformationSteps.java:63)
-	at ✽.User Goes to Provider Identifier information Section from Sheet Invaild data for individual and row 0 and Option yes(file:///C:/Users/RakeshA/eclipse-workspace/VYE_SD_QA_01/src/test/resources/Features/TC_02_EntityStep.feature:6)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at Utilities.BaseUtilClass.scrollToViewelement(BaseUtilClass.java:707)
+	at com.Pages.TP.TP_04_Ownership_Page.fill_the_ownership_question1(TP_04_Ownership_Page.java:150)
+	at com.StepDefinitions.LICENSE.Trading_Partner.TP_04_Ownership_Steps.fill_the_all_the_data_for_Ownership_scetion_by_using_from_Sheet_Trading_Partner_and_row_and_option_Option(TP_04_Ownership_Steps.java:28)
+	at ✽.Fill the all the data for Ownership scetion by using from Sheet Trading_Partner and row 0 and option yes(file:///C:/Users/RakeshA/git/repository/VYE_SD_QA_01/src/test/resources/Features/TC_03_Trading_Partner.feature:11)
 </pre></div></td>
-<td>29</td>
+<td>111</td>
 <td>com.TestRunner.testrun@17f62e33</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -149,7 +169,7 @@ Session ID: 3cb0ab36ef434662388c699207d1edfd
 <tr>
 <td title='com.TestRunner.testrun.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.testrun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials for provider portal", "login"</td>
 <td></td>
-<td>36</td>
+<td>39</td>
 <td>com.TestRunner.testrun@17f62e33</td></tr>
 </table><p>
 </body>

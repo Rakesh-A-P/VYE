@@ -9,7 +9,7 @@ Feature: login
  
    Examples:
    |  sheetName | rowNum |  button |
-   |Login       |0       |  delete |
-              #Continue
+   |  Login       |0       |   delete|
+              #Continue  delete
     
   
